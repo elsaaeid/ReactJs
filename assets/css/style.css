@@ -1,0 +1,273 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+:root {
+--selBg-color: #00adff;
+--text-color: #ffff;
+--optionBgHov-color: #ffff;
+--optionTextHov-color: #00adff;
+--note-color: #ffeccf;
+--noteBor-color: #f9dc11ad;
+--notep-color: antiquewhite;
+}
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+body {
+    position: relative;
+}
+p {
+    font-size: 20px;
+}
+ul {
+    font-size: 20px;
+    margin-top: 26px;
+    padding-top: 20px;
+}
+img {
+    width: 100%;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--selBg-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+.container {
+    margin-top: 50px;
+}
+h2.title {
+    padding-bottom: 40px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+section{
+    padding:5rem 9%;
+}
+.scroll-container {
+  scroll-behavior: smooth;
+}
+div#start {
+    background: var(--selBg-color);
+    color: var(--text-color);
+    padding-top: 13px;
+}
+.select {
+    height: 0px;
+    transition: 1s height ease-in-out;
+    background: var(--selBg-color);
+    overflow: hidden;
+    padding-top: 15px;
+}
+.select .option a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.select.start {
+    height: 35vh;
+}
+div#select {
+    overflow-y: scroll;
+    border: 1px solid black;
+    overflow-x: hidden;
+}
+div#start i {
+    margin-left: 111px;
+    transition: 1s height ease-in-out;
+}
+div#start i.Hover {
+    transform: rotate(90deg);
+    transition: 1s height ease-in-out;
+}
+.option {
+    padding-top: 10px;
+    transition: 1s height ease-in-out;
+}
+.option:hover {
+    background: var(--optionBgHov-color);
+}
+.option:hover a {
+    color: var(--optionTextHov-color);
+}
+.Create {
+    margin-top: 30px;
+}
+.Create ul {
+    list-style: none;
+    background: #3e4656;
+    color: #e9e9e9;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+}
+.Create ul li {
+    text-transform: lowercase;
+}
+p.buildNpm {
+    margin-top: 25px;
+}
+p.buildNpm span {
+    background: #d7edff;
+}
+.note {
+    background: beige;
+    border-left: 8px solid #ffc83d;
+    padding: 19px;
+}
+.note p a {
+    font-size: 20px;
+}
+.note h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 35px;
+    font-family: cursive;
+}
+.content h3 {
+    margin-bottom: 38px;
+    margin-top: 24px;
+}
+p.state {
+    margin-top: 36px;
+}
+p.usestate span {
+    background: var(--notep-color);
+}
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+img#myLogo {
+animation: 1s polygon reverse;
+animation: 1s polygon;
+}
+
+
+
+@keyframes polygon {
+  0% { clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%); }
+  100% { clip-path:  polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%); }
+}

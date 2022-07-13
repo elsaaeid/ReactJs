@@ -1,0 +1,26 @@
+@media (max-width: 540px) {
+a {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 414px) {
+.note p a {
+    font-size: 13px;
+}
+}
+
+@media (max-width: 375px) {
+.note p a {
+    font-size: 11px;
+}
+}
+@media (max-width: 280px) {
+p.buildNpm span {
+    background: #d7edff;
+    font-size: 16px;
+}
+.note p a {
+    font-size: 8px;
+}
+}

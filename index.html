@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- wow Animation css -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+</head>
+  <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bxs-up-arrow'></i></button>
+    <div class="container1">
+<center>
+ 	   <img src="assets/images/logo.svg" id="myLogo" style="width:200px; height: 200px;" class="wow fadeInDown" data-wow-duration="600ms" />
+	<h2 class="title">21 Best Open Source React Developer Tools To Use In 2022</h2>
+
+<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+<div class="custom-select" style="width:200px;">
+   <div class="start" id="start">Start<i class='bx bxs-right-arrow' id="arrow"></i></div>
+   <div class="select" id="select">
+    <div class="option"><a href="#Introducing"><i class='bx bxs-pointer' ></i>Introducing React</a></div>
+    <div class="option"><a href="#CreateReactApp"><i class='bx bxs-pointer' ></i>Create React App</a></div>
+    <div class="option"><a href="#Hook"><i class='bx bxs-pointer' ></i>Hooks</a></div>
+    <div class="option"><a href="#proxy"><i class='bx bxs-pointer' ></i>Proxy</a></div>
+    <div class="option"><a href="#Prop"><i class='bx bxs-pointer' ></i>Prop types</a></div>
+    <div class="option"><a href="#TypeScript"><i class='bx bxs-pointer' ></i>TypeScript</a></div>
+    <div class="option"><a href="#Redux"><i class='bx bxs-pointer' ></i>Redux</a></div>
+    <div class="option"><a href="#ReactRouter"><i class='bx bxs-pointer' ></i>React Router</a></div>
+    <div class="option"><a href="#Lodash"><i class='bx bxs-pointer' ></i>Lodash</a></div>
+    <div class="option"><a href="#Axios"><i class='bx bxs-pointer' ></i>Axios</a></div>
+    <div class="option"><a href="#Jest"><i class='bx bxs-pointer' ></i>Jest</a></div>
+    <div class="option"><a href="#Enzyme"><i class='bx bxs-pointer' ></i>Enzyme</a></div>
+    <div class="option"><a href="#ShallowRenderer"><i class='bx bxs-pointer' ></i>ShallowRenderer</a></div>
+    <div class="option"><a href="#Storybook"><i class='bx bxs-pointer' ></i>Storybook</a></div>
+    <div class="option"><a href="#ReactBootstrap"><i class='bx bxs-pointer' ></i>React Bootstrap</a></div>
+    <div class="option"><a href="#MaterialUI"><i class='bx bxs-pointer' ></i>Material-UI</a></div>
+    <div class="option"><a href="#AwesomeReact"><i class='bx bxs-pointer' ></i>AwesomeReact</a></div>
+    <div class="option"><a href="#ReactDevTools"><i class='bx bxs-pointer' ></i>React DevTools</a></div>
+    <div class="option"><a href="#ReactSlingshot"><i class='bx bxs-pointer' ></i>React Slingshot</a></div>
+    <div class="option"><a href="#Reactide"><i class='bx bxs-pointer' ></i>React Reactide</a></div>
+    <div class="option"><a href="#ReactCosmos"><i class='bx bxs-pointer' ></i>React Cosmos</a></div>
+  </div>
+  </div>
+
+<div class="scroll-container">
+<section class="Introducing" id="Introducing">
+    <div class="row">
+        <div class="content">
+	   <h2>📌Why is React web development so popular?</h2>
+	   </br>
+           <p>
+       React (or React.js) is a JavaScript framework that boosts developers’ ability to design and build brilliant User        Interfaces. With React and then React Native, <a href="https://www.ideamotive.co/frontend">front-end development</a> became faster and simply better.
+	   </p>
+	   </br></br>
+           <p>
+<a href="https://www.ideamotive.co/react">React web development</a> has recently gained a lot of traction because it provides developers with a solution to some of the most important frontend concerns. Above all, React allows 
+<a href="https://www.ideamotive.co/web-developers">web developers</a> to bring HTML into their JS code with the help of its unique syntax called JSX. What makes this library stand out is the idea of components that allow breaking complex UI features into isolated and reusable building blocks which can be then populated with custom data.
+	   </p>
+	<p class="buildNpm">A component is one of React’s fundamental building pieces. To put it another way, any React application you want to create is basically a build-up of components. Components make creating user interfaces a lot easier. You can break down a user interface into distinct components and work on them separately before combining them all into a parent component. This parent component is your final UI.
+In React, components basically return JSX code that tells what should be shown on the screen. Basically, there are two types of components that are important in ReactJS<span>(Functional components-Class components)</span>.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content">
+	 <div class="content1">
+ 	    <h1>💡Functional components</h1>
+	<p class="buildNpm">A functional component is basically a JavaScript function that is created in React. The functional components can be easily created in React by writing desired JavaScript functions. As compared to the class components, the functional components are quite simple and less powerful as it has only one render() method. One can use functional components when they are well aware of its task and that the function does not require any interaction with other components.</p>
+
+ 	   <img src="assets/images/13.png" id="myImg13" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+	    
+         </div>
+	 <div class="content2">
+ 	    <h1>💡Class components</h1>
+	<p class="buildNpm">Being a tad bit more complicated than functional components, class components are in synergy with other components as well. Data can be passed between various class components. For creating class components, JavaScript ES6 classes are used in React. Class components are powerful as they can pass data, props, etc. as inputs, interact with other class components, and provide desired results more efficiently.</p>
+
+ 	   <img src="assets/images/14.png" id="myImg14" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+	    
+         </div>
+        </div>
+   </div>
+</section>
+
+<section class="CreateReactApp" id="CreateReactApp">
+    <div class="row">
+        <div class="content">
+           <h1>1. Create React App</h1>
+	   <div class="Create">
+ 	     <ul>
+		<li>
+             npx create-react-app my-app
+		</li>
+		<li>
+             cd my-app
+		</li>
+		<li>
+             npm start
+		</li>
+	    </ul>
+ 	 </div>
+	 <img src="assets/images/create.svg" class="svgCreate"></img>
+        <p class="buildNpm">When you’re ready to deploy to production, create a minified bundle with <span>npm run build</span>.</p>
+        </div>
+   </div>
+<div class="row"><p>⚡️Repository: <a href="https://github.com/facebook/create-react-app">github.com/facebook/create-react-app</a></p></div>
+</section>
+
+<section class="Hook" id="Hook">
+    <div class="row">
+        <div class="content">
+           <h1>2. Hooks</h1>
+	   <p>While not strictly a tool, any developer working with React in 2020 needs to be familiar with hooks. These are a new addition to React as of version 16.8 which unlock useful features in function components. For example, the useState hook allows a function component to have its own state, whereas useEffect allows you to perform side effects after the initial render — for example, manipulating the DOM or data fetching. Hooks can be used to replicate lifecycle methods in functional components and allow you to share code between components.</p>
+        </br>
+        </br>
+	<h3>The following basic hooks are available:</h3>
+	<ul>
+	   <li><a href="https://reactjs.org/docs/hooks-state.html">useState:</a>for mutating state in a function component without lifecycle methods</li>
+        </br>
+	   <li><a href="https://reactjs.org/docs/hooks-effect.html">useEffect:</a>for executing functions post-render, useful for firing Ajax requests</li>
+        </br>
+	   <li><a href="https://reactjs.org/docs/hooks-reference.html#usecontext">useContext:</a> for accessing component context data, even outside component props</li>
+	</ul>
+        </div>
+	<div>To know more visit <a href="https://elsaaeid.github.io/Hooks/">https://elsaaeid.github.io/Hooks/</a></div>
+    </div>
+</section>
+
+<section class="proxy" id="proxy">
+    <div class="row">
+        <div class="content">
+           <h1>3. Proxy</h1>
+	   <h3>✌️ Configuring the Proxy Manually</h3>
+ 	   <div class="note">
+	      <h4>Note</h4>
+	      <p>You can use this feature in conjunction with the proxy property in package.json, but it is recommended you consolidate all of your logic into src/setupProxy.js.</p>
+	   </div>
+	   <div class="Create">
+ 	     <ul>
+		<li>
+             $ npm install http-proxy-middleware --save
+		</li>
+		<li>
+             $ # or
+		</li>
+		<li>
+             $ yarn add http-proxy-middleware
+		</li>
+	    </ul>
+ 	 </div>
+	 <h3>Next, create src/setupProxy.js and place the following contents in it:</h3>
+	   <p>// ES5 with npm</p>
+ 	   <img src="assets/images/1.png" id="myImg" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+ 	   <img src="assets/images/2.png" id="myImg2" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="Prop" id="Prop">
+    <div class="row">
+        <div class="content">
+           <h1>4. PropTypes</h1>
+	   <h3>💡 Overview about PropTypes</h3>
+	   <p class="usestate">PropTypes declares the type intended for the React component and documents its intent. This shows a warning in local dev if the types don’t match. It supports all JavaScript primitives such as Boolean, Number, and String. It can document which props are required via isRequired.</p>
+
+<div class="note"><span class="N">In order to install in NPM</span>
+           <p>visit Website: <a href="https://www.npmjs.com/package/prop-types">npmjs.com/package/prop-types</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="TypeScript" id="TypeScript">
+    <div class="row">
+        <div class="content">
+           <h1>5. TypeScript</h1>
+	   <h3>💡 Overview about TypeScript</h3>
+	   <p>JavaScript that scales for React projects with compile type checking. This supports all React libraries and tools with type declarations. It’s a superset of JavaScript, so it’s possible to opt out of the type checker. This both documents intent and fails the build when it doesn’t match. In Create React App projects, turn it on by passing in --template typescript when creating your app. TypeScript support is available starting from version react-script@2.1.0.</p>
+
+<div class="note"><span class="N">In order to know more</span>
+           <p>visit Website: <a href="https://www.typescriptlang.org/">www.typescriptlang.org/</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="Redux" id="Redux">
+    <div class="row">
+        <div class="content">
+           <h1>6. Redux</h1>
+	   <h3>💡 Overview about Redux</h3>
+	   <p class="buildNpm">Predictable state management container for JavaScript apps. This tool comes with a <span>store</span> that manages state data. State mutation is only possible via a <span>dispatch</span> message. The message object contains a type that signals to the <span>reducer</span> which mutation to fire. The recommendation is to keep everything in the app in a <span>single store</span>. Redux supports multiple <span>reducers</span> in a single store. Reducers have a one-to-one relationship between input parameters and output state. This makes <span>reducers pure functions</span>.</p>
+
+ 	   <img src="assets/images/3.png" id="myImg3" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://redux.js.org/">redux.js.org/</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="ReactRouter" id="ReactRouter">
+    <div class="row">
+        <div class="content">
+           <h1>7. React Router</h1>
+	   <h3>💡 Overview about React Router</h3>
+	   <p class="buildNpm">React Router is the de facto standard routing library for React. When you need to navigate through a React application with multiple views, you’ll need a router to manage the URLs. React Router takes care of that, keeping your application UI and the URL in sync.</p>
+
+
+	   <p class="buildNpm">The library comprises three packages: <a href="https://www.npmjs.com/package/react-router">react-router</a>, <a href="https://www.npmjs.com/package/react-router-dom">react-router-dom</a>, and <span>react-router-native</span>. The core package for the router is <span>react-router</span>, whereas the other two are environment specific. You should use <span>react-router-dom</span> if you’re building a website, and <span>react-router-native</span> if you’re building a React Native app.</p>
+
+ 	   <img src="assets/images/4.png" id="myImg4" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://reactrouter.com/">reactrouter.com</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ESLint" id="ESLint">
+    <div class="row">
+        <div class="content">
+           <h1>8. ESLint</h1>
+	   <h3>💡 Overview about ESLint</h3>
+	   <p class="buildNpm">ESLint is a linting tool that can be used to keep your code style consistent, enforce code quality and spot potential errors and bad patterns ahead of time. It offers a <a href="https://www.npmjs.com/package/eslint-plugin-react">plugin with React-specific linting rules</a> and is often used in conjunction with <a href="https://www.npmjs.com/package/eslint-config-airbnb">Airbnb’s React style guide</a>.</p>
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://eslint.org/">eslint.org</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="Lodash" id="Lodash">
+    <div class="row">
+        <div class="content">
+           <h1>9. Lodash</h1>
+	   <h3>💡 Overview about Lodash</h3>
+	   <p class="buildNpm">Lodash is a modern JavaScript utility library useful for React components. For example, React form input events like <span>onChange</span> fire once per keystroke. If the component gets data from a back-end API, it fires requests once per keystroke. This spams the back-end API and causes issues when many people use the UI. Lodash comes with debounced events, which fires one API request with many keystrokes.
+</br>
+To set up <span>onChange</span> debounced events:</p>
+
+ 	   <img src="assets/images/5.png" id="myImg5" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://lodash.com/">lodash.com</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="Axios" id="Axios">
+    <div class="row">
+        <div class="content">
+           <h1>10. Axios</h1>
+	   <h3>💡 Overview about Axios</h3>
+	   <p class="buildNpm">Making HTTP requests to fetch or save data is one of the most common tasks a client-side JavaScript application will need to do. And there is arguably no library better suited to the task than axios, a Promise-based HTTP client with an easy-to-use API. The tool supports <span>async</span>…<span>await</span> syntax to make Ajax requests from the browser. It supports error handling in case there are errors via <span>catch</span>. The tool’s API supports HTTP requests such as GET, DELETE, POST, PUT, and PATCH. This also plays well with Promise API calls like <span>Promise.all()</span> to send HTTP requests in parallel.
+</br>
+</br>
+Similar to jQuery’s <span>$.ajax</span> function, you can make any kind of HTTP request by passing an options object to axios:</p>
+
+ 	   <img src="assets/images/6.png" id="myImg6" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://www.npmjs.com/package/axios">npmjs.com/package/axios</a>.</p>
+        </div>
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>If you’d like to learn more about using axios in your projects, see <a href="https://www.sitepoint.com/axios-beginner-guide/">“Introducing Axios, a Popular, Promise-based HTTP Client”</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="Jest" id="Jest">
+    <div class="row">
+        <div class="content">
+           <h1>11. Jest</h1>
+	   <h3>💡 Overview about Jest</h3>
+	   <p class="buildNpm">Jest is a testing framework with a focus on simplicity for JavaScript projects. The good news is it comes built-in with Create React App. It works with projects that use Babel, TypeScript, and Node. There’s no configuration on most React projects. Tests can run in watch mode, which keeps track of code changes and reruns tests. The API contains <span>it</span>, and <span>expect</span> to quickly get started.
+</br>
+A sanity check to make sure tests execute is:</p>
+
+ 	   <img src="assets/images/7.png" id="myImg7" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://jestjs.io/">jestjs.io</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="Enzyme" id="Enzyme">
+    <div class="row">
+        <div class="content">
+           <h1>12. Enzyme</h1>
+	   <h3>💡 Overview about Enzyme</h3>
+	   <p class="buildNpm">Enzyme is a JavaScript testing utility for React that makes it easier to test components. The API is meant to be as intuitive as jQuery for component traversal. To get Enzyme, it needs two packages: <span>enzyme</span>, and a separate adapter. The adapter must be compatible with the version of React. For example, <span>enzyme-adapter-react-16</span> for React ^16.4.0, <span>enzyme-adapter-react-16.3</span> for ~16.3.0, so on and so forth. The adapter needs a configuration file <span>setupTest.js</span> to integrate with Jest.</p>
+
+ 	   <img src="assets/images/8.png" id="myImg8" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://enzymejs.github.io/enzyme/">enzymejs.github.io/enzyme/</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="ShallowRenderer" id="ShallowRenderer">
+    <div class="row">
+        <div class="content">
+           <h1>13. Shallow Renderer</h1>
+	   <h3>💡 Overview about Shallow Renderer</h3>
+	   <p class="buildNpm">This is shallow rendering useful for limiting tests to one level deep. It renders the parent component without affecting its children in a tree hierarchy. This isolates the test and makes assertions more robust. Shallow rendering supports a good chunk of the Enzyme API for traversing components. The <span>shallow</span> API does call lifecycle methods like <span>componentDidMount</span> and <span>componentDidUpdate</span> during render. With hooks, the shallow renderer does not call useEffect. One tip is do <span>console.log(component.debug())</span> to inspect what the shallow renderer sees.</p>
+
+ 	   <img src="assets/images/9.png" id="myImg9" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://enzymejs.github.io/enzyme/docs/api/shallow.html">enzymejs.github.io/enzyme/docs/api/shallow.html</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="Storybook" id="Storybook">
+    <div class="row">
+        <div class="content">
+           <h1>14. Storybook</h1>
+	   <h3>💡 Overview about Storybook</h3>
+	   <p class="buildNpm">This is an open-source tool for manual testing of React components in isolation. Storybook provides a sandbox to build components to get into hard to reach edge cases. It allows mocking so it can render components in key states that are hard to reproduce. Setup is automatic with Create React App when using react-scripts. Each story in Storybook can target a single component with many states. The story files have a convention like component.stories.js so one can quickly find them.
+</br>
+To get started with Storybook:</p>
+
+ 	   <img src="assets/images/10.png" id="myImg10" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://storybook.js.org/">storybook.js.org</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="ReactBootstrap" id="ReactBootstrap">
+    <div class="row">
+        <div class="content">
+           <h1>15. React Bootstrap</h1>
+	   <h3>💡 Overview about React Bootstrap</h3>
+	   <p class="buildNpm">This is the most popular front-end framework rebuilt for React. Every Bootstrap component is built from scratch as a React component. This replaces Bootstrap JavaScript and nukes dependencies like jQuery. The latest version supports Bootstrap 4.5. React Bootstrap works with the thousands of Bootstrap themes already found in version 4. Each component has accessibility in mind and is accessible by default. It supports Create React App out of the box, and custom themes are also supported.</p>
+
+ 	   <img src="assets/images/11.png" id="myImg11" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://react-bootstrap.github.io/">react-bootstrap.github.io</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="Material-UI" id="MaterialUI">
+    <div class="row">
+        <div class="content">
+           <h1>16. Material-UI</h1>
+	   <h3>💡 Overview about Material-UI</h3>
+	   <p class="buildNpm">Material-UI offers popular React components for faster and easier web development. It allows building your own design system or starting with Material Design. There are templates and themes available, both premium and free. Premium themes have a price tag depending on functionality. Material-UI comes via an npm package for quick installation.
+</br>
+To get started with Material-UI:</p>
+
+ 	   <img src="assets/images/12.png" id="myImg12" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://mui.com/">material-ui.com</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="AwesomeReact" id="AwesomeReact">
+    <div class="row">
+        <div class="content">
+           <h1>17. Awesome React</h1>
+	   <h3>💡 Overview about Awesome React</h3>
+	   <p class="buildNpm">Let’s round this list off with … another list! This time awesome-react — a GitHub repo containing a collection of awesome things relating to the React ecosystem.
+</br>
+The repo has a Tools section that contains many of the tools listed in this article (and a whole lot more besides), as well as sections on Tutorials, Demos, Videos, Conference Talks, ReactNative, GraphQL and more. Whatever you’re looking for in the world of React, this is a great place to start.</p>
+
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://github.com/enaqx/awesome-react">github.com/enaqx/awesome-react</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="ReactDevTools" id="ReactDevTools">
+    <div class="row">
+        <div class="content">
+           <h1>18. React DevTools</h1>
+	   <h3>💡 Overview about React DevTools</h3>
+	   <p class="buildNpm">One of the most important tools in any React developer’s toolbelt should be the React Developer Tools — a browser extension for both Chrome and Firefox. This allows you to easily inspect a React tree, including the component hierarchy, props, state, and more.
+</br>
+Once installed, the dev tools will give you two new tabs in your browser console — Components and Profiler. Clicking the former will show you all of the components in the current tree and allow you to filter them by name, whereas the latter allows you to record performance information about your React app.
+</br>
+This is a must-have tool when it comes to debugging a React app that consists of more than a handful of components.</p>
+</br>
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://reactjs.org/blog/2019/08/15/new-react-devtools.html">reactjs.org/blog/2019/08/15/new-react-devtools.html</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="ReactSlingshot" id="ReactSlingshot">
+    <div class="row">
+        <div class="content">
+           <h1>19. React Slingshot</h1>
+	   <h3>💡 Overview about React Slingshot</h3>
+	   <p class="buildNpm">At number one, we have React Slingshot. It is one of the best React development tools that enable the use of React with Redux.
+</br>
+It enables capabilities such as hot reloading, automated testing, linting, and automated production builds.
+</br>
+React Slingshot makes use of a number of well-known libraries and tools, including Babel, Webpack, ESLint, Sass, and PostCSS. Additionally, the beginning kit includes a fully functional sample app.</p>
+</br>
+<h3>Key Features Of React Slingshot:</h3>
+           <ul>
+	     <li>Get started on a single command.</li>
+	     <li>Rapid response.</li>
+	     <li>A single command line is required to verify all feedback.</li>
+	     <li>Slingshot leverages the most popular and powerful React libraries.</li>
+	  </ul>
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://www.npmjs.com/package/react-slingshot-scripts">www.npmjs.com/package/react-slingshot-scripts</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="Reactide" id="Reactide">
+    <div class="row">
+        <div class="content">
+           <h1>20. Reactide</h1>
+	   <h3>💡 Overview about Reactide</h3>
+	   <p class="buildNpm">Reactide is the world’s first react-based integrated development environment (IDE) for web application development. This cross-platform desktop application provides simplicity by automatically rendering the react project in the browser when a single React JSX file is opened.
+</br>
+It features a bespoke browser simulator and a built-in Node Server, removing your reliance on built-in tools and server configuration.
+</br>
+Additionally, Reactide provides visual editing assistance through its live representation of the project architecture. Receiving feedback from the browser simulation is now easier than ever, thanks to a slew of graphical user interface features.</p>
+</br>
+<h3>What Makes Reactide Unique?</h3>
+           <ul>
+	     <li>Configuration simplification.</li>
+	     <li>Visualization of components.</li>
+	     <li>Module reloading in real-time.</li>
+	     <li>Compatible terminal with workflows and commands.</li>
+	  </ul>
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://www.npmjs.com/package/reactide-config">www.npmjs.com/package/reactide-config</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="ReactCosmos" id="ReactCosmos">
+    <div class="row">
+        <div class="content">
+           <h1>21. React Cosmos</h1>
+
+ 	   <img src="assets/images/15.png" id="myImg15" class="wow pulse" data-wow-iteration="infinite" data-wow-duration="500ms" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+	   <h3>💡 Overview about React Cosmos</h3>
+	   <p class="buildNpm">Our list of top React development tools will be incomplete without the React Cosmos in it. This React development tool provides an all-in-one solution for creating reusable components.
+</br>
+React Cosmos can be used to optimize both minor and large components of react development. It scans components and enables the rendering of components with any combination of context, state, and props.
+</br>
+You can monitor the evolution of applications in real-time by connecting to running instances using React cosmos. It improves component design by introducing surface dependencies.</p>
+</br>
+<h3> Why Is Everyone So Obsessed About React Cosmos?</h3>
+           <ul>
+	     <li>Reusable component creation.</li>
+	     <li>UI sharing across multiple projects.</li>
+	     <li>Simplified debugging.</li>
+	     <li>External API mimicking in real-time.</li>
+	  </ul>
+<div class="note"><span class="N">In order to know more and installation</span>
+           <p>visit Website: <a href="https://www.npmjs.com/package/react-cosmos">www.npmjs.com/package/react-cosmos</a>.</p>
+        </div>
+        </div>
+    </div>
+</section>
+</div>
+</center>
+    </div>
+</div>
+
+    <script src="assets/js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- wow animation -->
+    <script src="assets/js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+  </body>
+</html>
